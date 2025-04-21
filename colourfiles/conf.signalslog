@@ -109,9 +109,14 @@ regexp=\s\d+\.\d+$
 colours=blue
 count=more
 ======
-# SIGNALS gain
+# SIGNALS gain (positive)
 regexp=[0-9.]+\%
 colours=blue
+count=more
+======
+# SIGNALS gain (negative)
+regexp=\-[0-9.]+\%
+colours=bright_red
 count=more
 ======
 # SIGNALS symbol
@@ -125,6 +130,6 @@ colours=green
 count=once
 ======
 # SIGNALS SELL
-regexp= \b\SELL_*\b
+regexp= SELL_*
 colours=bright_red
 count=once
