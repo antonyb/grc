@@ -110,18 +110,33 @@ colours=blue
 count=more
 ======
 # SIGNALS gain (positive)
-regexp=[0-9.]+\%
+regexp=[0-9.]+[%~]
 colours=blue
 count=more
 ======
 # SIGNALS gain (negative)
-regexp=\-[0-9.]+\%
+regexp=\-[0-9.]+[%~]
 colours=bright_red
 count=more
 ======
 # SIGNALS symbol
 regexp= \b\w+USDT\b
 colours=bright_cyan
+count=once
+======
+# SIGNALS high score
+regexp= \bsc 5\b
+colours=bright_red bold
+count=once
+======
+# SIGNALS current timeframe
+regexp= \d+m: \*
+colours=cyan
+count=once
+======
+# SIGNALS best timeframe
+regexp= \b\d+m\b
+colours=cyan
 count=once
 ======
 # SIGNALS string
@@ -131,5 +146,10 @@ count=once
 ======
 # SIGNALS SELL
 regexp= SELL_*
+colours=bright_red
+count=once
+======
+# SIGNALS ABORT
+regexp= ABORT
 colours=bright_red
 count=once
