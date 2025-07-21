@@ -124,11 +124,6 @@ regexp= \b\w+USDT\b
 colours=bright_cyan
 count=once
 ======
-# SIGNALS high score
-regexp= \bsc 5\b
-colours=bright_red bold
-count=once
-======
 # SIGNALS current timeframe
 regexp= \d+m: \*
 colours=cyan
@@ -149,7 +144,12 @@ regexp= SELL_*
 colours=bright_red
 count=once
 ======
-# SIGNALS ABORT
-regexp= ABORT
-colours=bright_red
+# SIGNALS EXTRA substate
+regexp= \bEXTRA\b
+colours=bright_magenta
+count=once
+======
+# SIGNALS high score
+regexp= \bsc 5\b
+colours=bright_magenta
 count=once
