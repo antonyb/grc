@@ -75,7 +75,7 @@ colours=green
 count=once
 ======
 # SIGNALS SELL
-regexp= SELL_*
+regexp= SELL_.+
 colours=bright_red
 count=once
 ======
