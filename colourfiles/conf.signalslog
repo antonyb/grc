@@ -84,6 +84,11 @@ regexp= \bEXTRA\b
 colours=bright_magenta
 count=once
 ======
+# SIGNALS PUMP substate
+regexp= \bPUMP\b
+colours=bright_magenta
+count=once
+======
 # SIGNALS high score
 regexp= \bsc 5\b
 colours=bright_magenta
