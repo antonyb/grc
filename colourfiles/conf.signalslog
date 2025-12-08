@@ -6,9 +6,9 @@ count=stop
 # this is date and hostname
 #   'Jun  3 22:44:55 neutronium '
 #   'Jun  3 22:44:55 neutronium-02.my-domain.io '
-regexp=^... (\d| )\d \d\d:\d\d:\d\d(\s[-.\w\d]+?\s)
-colours=green, green, red
-count=once
+#regexp=^... (\d| )\d \d\d:\d\d:\d\d(\s[-.\w\d]+?\s)
+#colours=green, green, red
+#count=once
 ======
 # everything in parentheses
 regexp=\(.*?\)
@@ -38,11 +38,6 @@ colours=yellow
 regexp=^\d{4}-\d{2}-\d{2} \d{2}:\d{2}
 colours=blue
 count=once
-====== NOT WORKING
-# SIGNALS volume
-regexp=\s\d+\.\d+$
-colours=blue
-count=more
 ======
 # SIGNALS gain (positive)
 regexp=[0-9.]+[%~]
@@ -69,8 +64,8 @@ regexp= \b\d+m\b
 colours=cyan
 count=once
 ======
-# SIGNALS string
-regexp= [A-Z_0-9,]+$
+# SIGNALS volume
+regexp= \$ +[0-9,]+
 colours=green
 count=once
 ======
