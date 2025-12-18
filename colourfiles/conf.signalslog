@@ -64,9 +64,14 @@ regexp= \b\d+m\b
 colours=cyan
 count=once
 ======
-# SIGNALS volume
-regexp= \$ +[0-9,.-]+
+# SIGNALS volume (positive)
+regexp= \$ +[0-9][0-9,.]+
 colours=green
+count=once
+======
+# SIGNALS volume (negative)
+regexp= \$ +-[0-9,.]+
+colours=bright_red
 count=once
 ======
 # SIGNALS SELL
