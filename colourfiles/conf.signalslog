@@ -65,7 +65,7 @@ colours=cyan
 count=once
 ======
 # SIGNALS volume
-regexp= \$ +[0-9,]+
+regexp= \$ +[0-9,.-]+
 colours=green
 count=once
 ======
