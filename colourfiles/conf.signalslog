@@ -50,7 +50,7 @@ colours=bright_red
 count=more
 ======
 # SIGNALS symbol
-regexp= \b\w+USDT\b
+regexp= \b\w+   \b
 colours=bright_cyan
 count=once
 ======
