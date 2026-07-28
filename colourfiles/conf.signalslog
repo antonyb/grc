@@ -74,22 +74,37 @@ regexp= \$ +-[0-9,.]+
 colours=bright_red
 count=once
 ======
-# SIGNALS SELL
-regexp= SELL_.+
-colours=bright_red
+# SIGNALS FIRST state
+regexp= \bFIRST\b
+colours=magenta
 count=once
 ======
-# SIGNALS EXTRA substate
+# SIGNALS FIRSTX state
+regexp= \bFIRSTX\b
+colours=bright_magenta
+count=once
+======
+# SIGNALS MORE state
+regexp= \bMORE\b
+colours=magenta
+count=once
+======
+# SIGNALS PUMP state
+regexp= \bPUMP\b
+colours=magenta
+count=once
+======
+# SIGNALS EXTRA state
 regexp= \bEXTRA\b
 colours=bright_magenta
 count=once
 ======
-# SIGNALS PUMP substate
-regexp= \bPUMP\b
-colours=bright_magenta
+# SIGNALS SELL state
+regexp= \bSELL\b
+colours=bright_red
 count=once
 ======
 # SIGNALS high score
-regexp= \bsc 5\b
+regexp= \bsc 4\b
 colours=bright_magenta
 count=once
