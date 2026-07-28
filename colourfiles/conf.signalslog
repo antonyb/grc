@@ -84,6 +84,11 @@ regexp= \bFIRSTX\b
 colours=bright_magenta
 count=once
 ======
+# SIGNALS TRADE state
+regexp= \bTRADE\b
+colours=bright_magenta
+count=once
+======
 # SIGNALS MORE state
 regexp= \bMORE\b
 colours=magenta
